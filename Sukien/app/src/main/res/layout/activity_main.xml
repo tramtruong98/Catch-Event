@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/btn_title"
+            android:layout_width="209dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/green"
+            android:gravity="center"
+            android:text="Các kiểu lập trình sự kiện"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/btn_soA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Số A:"
+                android:textColor="@color/black" />
+
+            <EditText
+
+                android:id="@+id/editText1"
+                android:layout_width="192dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/btn_soB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Số B:"
+                android:textColor="@color/black" />
+
+            <EditText
+
+                android:id="@+id/editText2"
+                android:layout_width="192dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </TableRow>
+
+
+        <TextView
+            android:id="@+id/btn_kq"
+            android:layout_width="390dp"
+            android:layout_height="50dp"
+            android:background="@color/green"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnbutton"
+            android:layout_width="390dp"
+            android:layout_height="50dp"
+            android:text="Kết quả"
+            android:onClick="btn_button"
+
+            />
+    </TableLayout>
+</LinearLayout>
